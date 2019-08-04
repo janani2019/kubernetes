@@ -5,15 +5,15 @@ metadata:
 spec:
   replicas: 3
   selector:
-    app: nodeapp
+    app: trainschedule
   template:
     metadata:
-      name: nodeapp
+      name: trainschedule
       labels:
-        app: nodeapp
+        app: trainschedule
     spec:
       containers:
-      - name: nodeapp
-        image: kammana/nodeapp:v1
+      - name: trainschedule
+        image: devopsnewjob/dockerfile:v1
         ports:
-        - containerPort: 8080
+        - containerPort: 8090
